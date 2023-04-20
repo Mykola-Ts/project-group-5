@@ -2,7 +2,7 @@
 :root {
   --black-color: #141414;
   --dark-green-color: #1e2827;
-  --white: #ffffff;
+  --white-color: #ffffff;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 250ms;
   --basic-column-gap-item-list: 24px;
