@@ -1,0 +1,30 @@
+/* ---------------- COMPONENTS ---------------- */
+.button {
+  padding: 17px 34px;
+  border: 1px solid var(--dark-green-color);
+  border-radius: 8px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background-color: var(--dark-green-color);
+
+  transition: border var(--transition-timing-functio) var(--transition-duration);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  border: 1px solid var(--white-color);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+
+  color: var(--dark-green-color);
+}

@@ -1,21 +1,48 @@
-@font-face {
-  font-family: 'Epilogue';
-  src: url('/fonts/Epilogue-VariableFont_wght.woff2') format('woff2');
-}
-
+/* ---------------- COMMON STYLES ---------------- */
 body {
-  font-family: 'Epilogue', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.29;
+
+  color: var(--black-color);
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section {
   padding-bottom: 80px;
 }
 
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------- MEDIA ---------------- */
+
 @media screen and (min-width: 768px) {
   .section {
     padding-bottom: 128px;
+  }
+
+  .container {
+    max-width: 768px;
   }
 }
 
@@ -24,47 +51,8 @@ body {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-}
 
-.container {
-  max-width: var(--mobile);
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: var(--tablet);
-  }
-}
-
-@media screen and (min-width: 1280px) {
   .container {
     max-width: 1206px;
   }
-}
-
-.button-desktop {
-  display: block;
-  background-color: var(--dark-green-color);
-  cursor: pointer;
-  padding: 17px 34px;
-  border: none;
-  border-radius: 8px;
-  font-weight: var(--font-regular);
-  font-size: 12px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white-color);
-  border: 1px solid var(--dark-green-color);
-  transition: border-color var(--animation-time) var(--animation-func);
-}
-
-.button-desktop:hover,
-.button-desktop:focus,
-.button-desktop:active {
-  border: 1px solid var(--white-color);
 }
