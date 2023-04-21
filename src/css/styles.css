@@ -13,3 +13,9 @@
 /* @import url('./sale.css'); */
 /* @import url('./footer.css'); */
 /* @import url('./buy-now.css'); */
+.text-semibold {
+  font-weight: 600;
+}
+.text-light {
+  font-weight: 300;
+}

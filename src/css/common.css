@@ -27,20 +27,14 @@ body {
 }
 
 .container {
-  width: 100%;
+  max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---------------- MEDIA ---------------- */
-
-@media screen and (min-width: 375px) {
-  .container {
-    width: var(--mobile);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .section {
@@ -48,7 +42,7 @@ body {
   }
 
   .container {
-    max-width: var(--tablet);
+    max-width: 768px;
   }
 }
 
@@ -59,6 +53,6 @@ body {
   }
 
   .container {
-    max-width: var(--desktop);
+    max-width: 1206px;
   }
 }
