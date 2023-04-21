@@ -1,0 +1,34 @@
+/* ---------------- FONTS ---------------- */
+
+/* ---------------- Epilogue Light ---------------- */
+@font-face {
+  font-family: 'EpilogueLight';
+  src: url('../fonts/EpilogueLight.eot');
+  src: url('../fonts/EpilogueLight.eot') format('embedded-opentype'),
+    url('../fonts/EpilogueLight.woff2') format('woff2'),
+    url('../fonts/EpilogueLight.woff') format('woff'),
+    url('../fonts/EpilogueLight.ttf') format('truetype'),
+    url('../fonts/EpilogueLight.svg#EpilogueLight') format('svg');
+}
+
+/* ---------------- Epilogue Regular ---------------- */
+@font-face {
+  font-family: 'EpilogueRegular';
+  src: url('../fonts/EpilogueRegular.eot');
+  src: url('../fonts/EpilogueRegular.eot') format('embedded-opentype'),
+    url('../fonts/EpilogueRegular.woff2') format('woff2'),
+    url('../fonts/EpilogueRegular.woff') format('woff'),
+    url('../fonts/EpilogueRegular.ttf') format('truetype'),
+    url('../fonts/EpilogueRegular.svg#EpilogueRegular') format('svg');
+}
+
+/* ---------------- Epilogue SemiBold ---------------- */
+@font-face {
+  font-family: 'EpilogueSemiBold';
+  src: url('../fonts/EpilogueSemiBold.eot');
+  src: url('../fonts/EpilogueSemiBold.eot') format('embedded-opentype'),
+    url('../fonts/EpilogueSemiBold.woff2') format('woff2'),
+    url('../fonts/EpilogueSemiBold.woff') format('woff'),
+    url('../fonts/EpilogueSemiBold.ttf') format('truetype'),
+    url('../fonts/EpilogueSemiBold.svg#EpilogueSemiBold') format('svg');
+}

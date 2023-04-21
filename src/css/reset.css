@@ -1,4 +1,4 @@
-/* ---------------- Reset styles ---------------- */
+/* ---------------- RESET STYLES ---------------- */
 h1,
 h2,
 h3,
@@ -10,17 +10,6 @@ p {
   margin-bottom: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
 button {
   cursor: pointer;
 }
@@ -30,4 +19,16 @@ img {
 
   max-width: 100%;
   height: auto;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
