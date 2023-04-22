@@ -1,12 +1,14 @@
 /* ---------------- STYLES ---------------- */
 @import url('./fonts.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css');
+@import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
 @import url('./reset.css');
 @import url('./variables.css');
 @import url('./common.css');
 @import url('./components.css');
 /* @import url('./header.css'); */
 /* @import url('./burger-menu.css'); */
-/* @import url('./hero.css'); */
+@import url('./hero.css');
 /* @import url('./about-us.css'); */
 /* @import url('./catalog.css'); */
 /* @import url('./new-watches.css'); */

@@ -1,0 +1,146 @@
+/* ---------------- HERO ---------------- */
+
+.hero {
+  padding-top: 122px;
+  padding-bottom: 40px;
+
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.hero-title {
+  margin-bottom: 60px;
+
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.hero-swiper {
+  max-width: 266px;
+  margin-left: 0;
+  margin-bottom: 40px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 20px;
+}
+
+.swiper-nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.swiper-button {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  transition: color var(--transition-timing-function) var(--transition-duration),
+    border-color var(--transition-timing-function) var(--transition-duration);
+}
+
+.swiper-button:hover,
+.swiper-button:focus {
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+.button-prev {
+  margin-right: 12px;
+}
+
+.swiper-button-icon {
+  fill: currentColor;
+}
+
+.swiper-pagination {
+  position: static;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  color: var(--white-color);
+}
+
+.pagination-line {
+  display: inline-block;
+
+  width: 32px;
+  height: 1px;
+  margin-left: 6px;
+  margin-right: 6px;
+
+  background-color: currentColor;
+}
+
+.hero-descr {
+  max-width: 248px;
+  margin-bottom: 40px;
+  margin-left: auto;
+
+  font-weight: 300;
+}
+
+/* ---------------- MEDIA ---------------- */
+
+/* ----------------min-width: 768px---------------- */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 148px;
+    padding-bottom: 64px;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    line-height: 1.03;
+  }
+
+  .hero-swiper {
+    max-width: 436px;
+  }
+
+  .pagination-line {
+    width: 40px;
+  }
+
+  .swiper-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-button-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ----------------min-width: 1280px---------------- */
+
+@media screen and (min-width: 1158px) {
+  .hero-title {
+    max-width: 750px;
+  }
+
+  .hero-descr {
+    max-width: 282px;
+  }
+
+  .hero-img {
+    width: 676;
+  }
+}
