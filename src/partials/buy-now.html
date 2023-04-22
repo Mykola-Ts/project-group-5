@@ -1,0 +1,100 @@
+<section class="section">
+  <div class="container">
+    <button type="button" class="button" data-modal-open>Buy now</button>
+  </div>
+</section>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close-button" data-modal-close>
+      <svg class="modal-close-icon">
+        <use
+          class="modal-close-cross"
+          href="./img/sprite.svg#icon-cross-black"
+        ></use>
+      </svg>
+    </button>
+    <div class="card-wrap">
+      <picture class="card-picture">
+        <source
+          srcset="
+            ./img/buy-now/modal-image-1x.webp 1x,
+            ./img/buy-now/modal-image-2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./img/buy-now/modal-image-1x 1x,
+            ./img/buy-now/modal-image-2x 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          class="image modal-image"
+          src="./img/buy-now/modal-image-1x.jpg"
+          alt="Tube Watch S42 Date Steel With Black Case"
+          width="276"
+          height="325"
+        />
+      </picture>
+      <div class="card-text-wrap">
+        <p class="card-title">Tube Watch S42 Date Steel With Black Case</p>
+        <p class="card-price">€395</p>
+      </div>
+    </div>
+    <form>
+      <div class="modal-box">
+        <label class="modal-label"
+          >Full name
+          <input
+            class="modal-input"
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+          />
+        </label>
+      </div>
+      <div class="modal-box">
+        <label class="modal-label"
+          >Email
+          <input
+            class="modal-input"
+            type="tel"
+            name="phone"
+            placeholder="Enter your email"
+          />
+        </label>
+      </div>
+      <div class="modal-box">
+        <label class="modal-label"
+          >Card number
+          <input
+            class="modal-input"
+            type="email"
+            name="email"
+            placeholder="Enter card"
+          />
+        </label>
+      </div>
+      <div class="modal-box">
+        <label class="modal-label"
+          >Comments
+          <textarea
+            class="modal-comment"
+            name="comment"
+            placeholder="Enter your text"
+            name="comment"
+          ></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="button button-submit">submit</button>
+      <p class="modal-text">
+        By clicking on “Send message” button, you agree to our
+        <a class="modal-link" href="">Privacy Policy</a>, and allow Promodo to
+        use this information for marketing purposes.
+      </p>
+    </form>
+  </div>
+</div>
