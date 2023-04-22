@@ -1,0 +1,106 @@
+
+body {
+    margin: 0;
+}
+.section-about-us {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.title-about-us {
+    font-family: 'Epilogue';
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    color: var(--dark-green-color);
+    margin-bottom: 40px;
+}
+.text-about-us-1 {
+    font-family: 'Epilogue';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    margin-bottom: 20px;
+    }
+    .text-about-us-2 {
+    font-family: 'Epilogue';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    margin-bottom: 40px;
+    }
+    .about-us-gif {
+        margin: 0;
+        width: 335px;
+        height: 365px;
+        background-color: brown;
+    }
+
+
+    
+        @media screen and (min-width: 768px) {
+        .all-about-us {
+            display: flex;
+            flex-direction: row;
+            margin-top: 64px;
+
+        }
+        .container {
+            padding-right: 32px;
+            padding-left: 32px;
+            margin: auto auto;
+        }
+            .section-about-us {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            }
+        .title-about-us {
+            display: block;
+            /* width: 100%; */
+            text-align: left;
+            margin-right: 40px;
+            justify-content: space-between;
+            line-height: 1.1;
+        }
+        .text-about-us-1 {
+            margin-right: 20px;
+            width: 220px;
+            /* width: 100%; */
+            margin-bottom: 40px;
+        }
+        .text-about-us-2 {
+            width: 250px;
+            /* width: 100%; */
+        }
+        }
+
+        @media screen and (min-width: 1280px) {
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .title-about-us {
+            margin-right: 110px;
+        }
+
+
+        .text-about-us-1 {
+            margin-right: 40px;
+            width: 439px;
+            /* width: 100%; */
+            margin-bottom: 40px;
+                }
+        
+        .text-about-us-2 {
+            width: 380px;
+            /* width: 100%; */
+        }
+        
+        }
