@@ -1,0 +1,114 @@
+.title-sale {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--dark-green-color);
+    margin-bottom: 40px;
+}
+
+.sale-bloks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 335px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80px;
+}
+
+.big-card {
+    max-width: 235px;
+}
+
+.watch-name {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    margin-bottom: 8px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+.product-tag {
+    margin-bottom: 16px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.new-price {
+    display: block;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+}
+
+.old-price {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+.about-sale-watch {
+    position: relative;
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--black-color);
+    padding-bottom: 8px;
+    margin-bottom: 9px;
+}
+
+.about-sale-watch::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-color);
+    margin-bottom: 8px;
+}
+
+.about-sale-watch::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: var(--black-color);
+    margin-left: auto;
+}
