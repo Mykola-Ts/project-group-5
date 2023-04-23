@@ -36,12 +36,12 @@ body {
     margin-bottom: 40px;
     }
     .about-us-gif {
-        margin: 0;
-        width: 335px;
-        height: 365px;
-        background-color: brown;
+        margin: auto auto;
     }
-
+    .img-about-us-gif {
+        max-width: 335px;
+        height: 365px;
+        }
 
     
         @media screen and (min-width: 768px) {
@@ -79,6 +79,10 @@ body {
             width: 250px;
             /* width: 100%; */
         }
+        .img-about-us-gif {
+            max-width: 704px;
+            height: 465px;
+            }
         }
 
         @media screen and (min-width: 1280px) {
@@ -94,13 +98,18 @@ body {
         .text-about-us-1 {
             margin-right: 40px;
             width: 439px;
-            /* width: 100%; */
             margin-bottom: 40px;
                 }
         
         .text-about-us-2 {
             width: 380px;
-            /* width: 100%; */
+            
         }
         
+        .img-about-us-gif {
+        max-width: 892px;
+        height: 500px;
+        position: relative;
+        right: -132px;
+        }
         }
