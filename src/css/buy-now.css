@@ -18,7 +18,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   max-width: 335px;
   width: calc(100% - 40px);
   display: flex;
@@ -34,6 +34,8 @@
 
 @media screen and (min-width: 768px) {
   .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
     max-width: 744px;
     width: calc(100% - 24px);
     flex-direction: initial;
@@ -111,6 +113,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   color: var(--black-color);
+  padding-right: 20px;
   margin-bottom: 4px;
 }
 
@@ -165,7 +168,8 @@
 }
 
 .modal-input:hover,
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:active {
   border-color: var(--dark-green-color);
 }
 
