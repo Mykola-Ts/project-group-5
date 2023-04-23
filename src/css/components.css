@@ -11,13 +11,14 @@
   color: var(--white-color);
   background-color: var(--dark-green-color);
 
-  transition: border var(--transition-timing-functio) var(--transition-duration);
+  transition: border-color var(--transition-timing-functio)
+    var(--transition-duration);
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-  border: 1px solid var(--white-color);
+  border-color: var(--white-color);
 }
 
 .title {
