@@ -1,0 +1,147 @@
+body{
+font-family: sans-serif;
+line-height: 1.5;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.section-watch {
+padding-top: 80px;
+padding-bottom: 0px;
+background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .section-watch{
+    padding-top: 128px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+    .section-watch {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+}
+
+
+.area-watch {
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding-left: 20px;
+padding-right: 20px;
+max-width: 335px;
+}
+
+@media (min-width: 768px) {
+    .area-watch {
+        padding-left: 32px;
+        padding-right: 32px;
+        max-width: 705px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .area-watch {
+        padding-left: 132px;
+        padding-right: 132px;
+        max-width: 1176px;
+    }
+}
+
+.text-box {
+max-width: 335px;
+}
+
+@media (min-width: 768px) {
+    .text-box {
+        max-width: 448px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .text-box {
+        max-width: 448px;
+        padding-top: 80px;
+    }
+}
+
+.new-watch {
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+color: rgba(20, 20, 20, 0.4);
+margin: 0;
+}
+
+.green-bronze {
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+color: #1E2827;
+margin: 0;
+padding-top: 8px;
+}
+
+@media (min-width: 768px) {
+   .green-bronze {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+   }
+}
+
+
+.box-img-watch {
+list-style: none;
+display: flex;
+gap: 24px;
+padding-top: 80px;
+padding-left: 0;
+margin: 0;
+max-width: 335px;
+flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+    .box-img-watch {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 705px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .box-img-watch {
+        justify-content: flex-end;
+        max-width: 1440px;
+    }
+}
+
+.field-wotch {
+ max-width: 335px;
+}
+
+@media (min-width: 768px) {
+ .field-wotch {
+        flex-basis: calc((100% - 20px) / 2);
+        max-width: 309px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .field-wotch {
+        flex-basis: calc((100% - 20px) / 2);
+            max-width: 444px;
+    }
+}
