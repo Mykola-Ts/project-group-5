@@ -11,8 +11,8 @@
   color: var(--white-color);
   background-color: var(--dark-green-color);
 
-  transition: border var(--transition-timing-function)
-    var(--transition-duration);
+  transition: border var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .button:hover,

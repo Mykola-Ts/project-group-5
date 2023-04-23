@@ -52,6 +52,9 @@
             type="text"
             name="name"
             placeholder="Enter your full name"
+            required
+            pattern="^[a-zA-Zа-яА-ЯіІїЇґҐ']{2,}(\s[a-zA-Zа-яА-ЯіІїЇґҐ']{2,})+$"
+            title="Please enter a valid name with at least two words, each containing at least two letters"
           />
         </label>
       </div>
@@ -60,9 +63,12 @@
           >Email
           <input
             class="modal-input"
-            type="tel"
-            name="phone"
+            type="email"
+            name="email"
             placeholder="Enter your email"
+            required
+            pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+            title="Enter a valid email address (e.g. name@example.com)"
           />
         </label>
       </div>
@@ -71,9 +77,12 @@
           >Card number
           <input
             class="modal-input"
-            type="email"
-            name="email"
+            type="text"
+            name="card"
             placeholder="Enter card"
+            required
+            pattern="^[0-9]{16}$"
+            title="Please enter a valid 16-digit card number"
           />
         </label>
       </div>
