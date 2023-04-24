@@ -1,7 +1,9 @@
+/* ------SALE--------- */
+
 .title-sale {
     font-weight: 600;
-    font-size: 40px;
-    line-height: 1.1;
+    font-size: 32px;
+    line-height: 1.25;
     letter-spacing: -0.02em;
     color: var(--dark-green-color);
     margin-bottom: 40px;
@@ -33,10 +35,16 @@
     max-width: 235px;
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .watch-name {
     font-weight: 400;
-    font-size: 38px;
-    line-height: 1.05;
+    font-size: 24px;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: var(--black-color);
     margin-bottom: 8px;
@@ -112,3 +120,48 @@
     background-color: var(--black-color);
     margin-left: auto;
 }
+
+@media screen and (min-width: 768px) {
+
+    .title-sale {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .sale-bloks {
+        max-width: 572px;
+    }
+
+    .cards-list {
+        max-width: 146px;
+        width: 146px;
+    }
+
+    .big-card {
+        max-width: 406px;
+    }
+
+    .watch-name {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .sale-bloks {
+        flex-direction: row;
+        max-width: 981px;
+    }
+
+    .description {
+        gap: 20px;
+    }
+
+    .price {
+        padding-bottom: 20px;
+    }
+}
+        
