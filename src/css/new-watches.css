@@ -1,91 +1,63 @@
+/* ---------------- NEW-WATCHES ---------------- */
 
-.text-box {
-    max-width: 335px;
+.new-watches-title {
+  margin-bottom: 8px;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.06em;
+
+  color: rgba(20, 20, 20, 0.4);
 }
+
+.new-watches-text {
+  max-width: 448px;
+  margin-bottom: 40px;
+}
+
+.new-watches-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.new-watches-list-item {
+  display: block;
+
+  width: 100%;
+}
+
+/* ---------------- MEDIA-NEW-WATCHES ---------------- */
+
+/* ----------------min-width: 768px---------------- */
 
 @media (min-width: 768px) {
-    .text-box {
-        max-width: 448px;
-    }
+  .new-watches {
+    padding-bottom: 128px;
+  }
+
+  .new-watches-text {
+    margin-bottom: 40px;
+  }
+
+  .new-watches-list {
+    column-gap: 24px;
+  }
+
+  .new-watches-list-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
+
+/* ----------------min-width: 1280px---------------- */
 
 @media (min-width: 1280px) {
-    .text-box {
-        max-width: 448px;
-        padding-top: 0px;
-    }
-}
+  .new-watches {
+    padding-bottom: 160px;
+  }
 
-.new-watch {
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    color: rgba(20, 20, 20, 0.4);
-    margin: 0;
-}
-
-.green-bronze {
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    color: #1E2827;
-    margin: 0;
-    padding-top: 8px;
-}
-
-@media (min-width: 768px) {
-    .green-bronze {
-        font-family: 'Epilogue';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 40px;
-    }
-}
-
-
-.box-img-watch {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    padding-top: 80px;
-    padding-left: 0;
-    margin: 0;
-    max-width: 335px;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .box-img-watch {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        max-width: 705px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .box-img-watch {
-        justify-content: flex-end;
-        max-width: 1440px;
-    }
-}
-
-.field-wotch {
-    max-width: 335px;
-}
-
-@media (min-width: 768px) {
-    .field-wotch {
-        flex-basis: calc((100% - 20px) / 2);
-        max-width: 309px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .field-wotch {
-        flex-basis: calc((100% - 20px) / 2);
-        max-width: 576px;
-    }
+  .new-watches-text {
+    margin-bottom: 80px;
+  }
 }
