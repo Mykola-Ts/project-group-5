@@ -51,8 +51,9 @@ footer {
 }
 
 .footer-logo {
-    padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: var(--basic-row-gap-item-list);
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -82,7 +83,7 @@ footer {
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size var(--transition-duration, --transition-timing-function);
+    transition: background-size var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-number:is(:hover, :focus) {
@@ -101,7 +102,7 @@ footer {
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size var(--transition-duration, --transition-timing-function);
+    transition: background-size var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-address:is(:hover, :focus) {
@@ -138,7 +139,8 @@ footer {
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size var(--transition-duration, --transition-timing-function);
+    transition: background-size var(--transition-duration) var(--transition-timing-function);
+    
 }
 
 .footer-nav-link:is(:hover, :focus) {
@@ -162,7 +164,7 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     fill: var(--white-color);
-    transition: border-color  var(--transition-duration, --transition-timing-function);
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-social-link:is(:hover, :focus) {
