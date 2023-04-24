@@ -71,6 +71,18 @@
   height: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal-close-button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-close-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .modal-close-cross {
   fill: currentColor;
 }
