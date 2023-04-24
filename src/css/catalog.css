@@ -52,6 +52,9 @@
 .favorites-icon {
   fill: transparent;
   stroke: var(--white-color);
+
+  transition: fill var(--transition-duration) var(--transition-timing-function),
+    stroke var(--transition-duration) var(--transition-timing-function);
 }
 
 .favorites-button:is(:hover, :focus, :active) .favorites-icon {
