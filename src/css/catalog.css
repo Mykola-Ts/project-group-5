@@ -30,10 +30,6 @@
   width: 100%;
 }
 
-.catalog-item-descr {
-  padding-top: 14px;
-}
-
 .favorites-button {
   position: absolute;
   top: 14px;
@@ -64,7 +60,7 @@
 
 .catalog-item-text {
   margin-bottom: 4px;
-
+  padding-right: 57px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -85,7 +81,7 @@
 
 .catalog-item-thumb {
   position: relative;
-
+  margin-bottom: 14px;
   overflow: hidden;
 }
 
@@ -177,6 +173,10 @@
 
   .catalog-list-item {
     width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .catalog-item-text {
+    padding-right: 30px;
   }
 
   .catalog-overlay {
