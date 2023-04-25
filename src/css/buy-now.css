@@ -201,7 +201,7 @@
 }
 
 .modal-input:not(:placeholder-shown):required:invalid {
-  border-color: #dc143c;
+  border-color: #ff0000;
 }
 
 .modal-comment {
