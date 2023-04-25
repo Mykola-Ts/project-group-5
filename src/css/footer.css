@@ -40,14 +40,7 @@
   display: block;
 }
 
-.footer-nav-link {
-  text-transform: uppercase;
-
-  color: var(--white-color);
-}
-
 .footer-address-link,
-.footer-nav-link,
 .copirate-item {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
