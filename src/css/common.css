@@ -25,9 +25,10 @@ body {
 }
 
 .section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: var(--background-color-sections);
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-color: var(--background-color-sections);
 }
 
 .container {
