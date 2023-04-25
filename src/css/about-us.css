@@ -10,11 +10,14 @@
 
 .about-us-gif {
   margin: auto auto;
+  width: 335px;
+  height: 365px;
 }
 
 .about-us-gif img {
-  max-width: 100%;
-  height: 365px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ---------------- MEDIA ---------------- */
@@ -38,7 +41,7 @@
     margin-right: 20px;
   }
 
-  .about-us-gif img {
+  .about-us-gif {
     width: 704px;
     height: 465px;
   }
@@ -67,9 +70,6 @@
 
   .about-us-gif {
     margin-right: 0;
-  }
-
-  .about-us-gif img {
     width: 892px;
     height: 500px;
   }
