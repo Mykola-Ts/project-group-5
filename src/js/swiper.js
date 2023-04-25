@@ -26,4 +26,9 @@ const swiper = new Swiper('.hero-swiper', {
       );
     },
   },
+  autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
 });
