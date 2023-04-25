@@ -1,4 +1,7 @@
 /* ---------------- NEW-WATCHES ---------------- */
+.new-watches.section {
+  background-color: var(--white-color);
+}
 
 .new-watches-title {
   margin-bottom: 8px;
