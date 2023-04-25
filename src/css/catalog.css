@@ -18,6 +18,8 @@
 }
 
 .catalog-list-item {
+  position: relative;
+
   display: block;
   width: 100%;
 
