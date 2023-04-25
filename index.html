@@ -7,10 +7,55 @@
     <title>The Watch Spot</title>
     
     <script type="module" crossorigin src="/project-group-5/assets/index-30df475e.js"></script>
-    <link rel="stylesheet" href="/project-group-5/assets/index-5e0b67cd.css">
+    <link rel="stylesheet" href="/project-group-5/assets/index-53695718.css">
   </head>
   <body>
     <!-- Header -->
+    <header>
+    <div class="container">
+        <div class="header-container">
+            <a href="./index.html" class="header-link link">
+                <img src="/project-group-5/assets/logo-1eccccbd.svg" class="header-logo" width="14" height="14" alt="Logo">
+                <span class="header-caption">thewatchspot</span>
+            </a>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" ria-controls="mobile-menu">
+                <img src="/project-group-5/assets/menu-open-be358e5a.svg" width="20" height="14" alt="Mobile menu open">
+            </button>
+        </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            
+            <button class="menu-toggle js-close-menu">
+                <svg class="mobile-menu-close" width="24" height="24">
+                    <use href="/project-group-5/assets/sprite-38dfb11b.svg#icon-cross-black"></use>
+                </svg>
+            </button>
+        
+            <div class="mobile-logo-container">
+                <a href="./index.html" class="header-link link">
+                    <img src="/project-group-5/assets/logo-1eccccbd.svg" class="header-logo" width="14" height="14" alt="Logo">
+                    <span class="header-caption">thewatchspot</span>
+                </a>
+            </div>
+
+            <div class="mobile-menu">
+                <ul class="mobile-link-container list">
+                    <li>
+                        <a href="#about-us" class="link mobile-nav-link">About us</a>
+                    </li>
+                    <li>
+                        <a href="#catalog" class="link mobile-nav-link">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="#sale" class="link mobile-nav-link">Sale</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Burger menu -->
     <section class="hero section">
   <div class="hero-container container">
     <h1 class="hero-title">Welcome to our collection of premium watches</h1>
@@ -1088,6 +1133,12 @@
 </div>
 
     
+    <!-- mobile-menu start -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- mobile-menu end -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>
