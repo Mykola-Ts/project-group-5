@@ -1,5 +1,4 @@
 /* ---------------- NEW-WATCHES ---------------- */
-
 .new-watches-title {
   margin-bottom: 8px;
 
@@ -53,11 +52,15 @@
 /* ----------------min-width: 1280px---------------- */
 
 @media (min-width: 1280px) {
-  .new-watches {
-    padding-bottom: 160px;
+  .new-watches.section {
+    background-color: var(--white-color);
   }
 
   .new-watches-text {
     margin-bottom: 80px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  
+  }
