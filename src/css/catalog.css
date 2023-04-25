@@ -74,7 +74,7 @@
   line-height: 1.17;
   letter-spacing: -0.02em;
 
-  color: rgba(20, 20, 20, 0.5);
+  color: var(--sub-color-text);
 }
 
 .catalog-item-thumb {
@@ -119,7 +119,7 @@
 .catalog-text-overlay {
   letter-spacing: -0.01em;
 
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--gray-color);
 }
 
 .catalog-text-overlay:not(:last-child) {

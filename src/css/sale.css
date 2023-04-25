@@ -41,7 +41,7 @@
 }
 
 .sale-description-text {
-  color: rgba(20, 20, 20, 0.5);
+  color: var(--sub-color-text);
 }
 
 .product-tag {
@@ -58,7 +58,7 @@
   line-height: 1.17;
   letter-spacing: -0.02em;
 
-  color: rgba(20, 20, 20, 0.5);
+  color: var(--sub-color-text);
 }
 
 .sale-price-item:not(:last-child) {

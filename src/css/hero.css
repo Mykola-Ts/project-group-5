@@ -44,9 +44,9 @@
   height: 32px;
   border-radius: 8px;
 
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--gray-color);
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--gray-color);
 
   transition: color var(--transition-timing-function) var(--transition-duration),
     border-color var(--transition-timing-function) var(--transition-duration);
