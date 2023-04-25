@@ -27,7 +27,7 @@ body {
 .section {
   padding-bottom: 80px;
 
-  background-color: #efefef;
+  background-color: var(--background-color-sections);
 }
 
 .container {

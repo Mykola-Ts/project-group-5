@@ -49,13 +49,11 @@
   fill: transparent;
   stroke: var(--white-color);
 
-  transition: fill var(--transition-duration) var(--transition-timing-function),
-    stroke var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .favorites-button:is(:hover, :focus, :active) .favorites-icon {
-  fill: #ffa900;
-  stroke: #ffa900;
+  fill: var(--white-color);
 }
 
 .catalog-item-text {
