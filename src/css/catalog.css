@@ -45,17 +45,24 @@
   border: none;
 
   background-color: transparent;
+  color: rgba(20, 20, 20, 0.1);
 }
 
 .favorites-icon {
   fill: transparent;
-  stroke: var(--white-color);
+  stroke: currentColor;
 
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-timing-function)
+    stroke var(--transition-duration) var(--transition-timing-function);
 }
 
 .favorites-button:is(:hover, :focus, :active) .favorites-icon {
-  fill: var(--white-color);
+  fill: rgba(20, 20, 20, 0.1);
+  stroke: rgba(20, 20, 20, 0.1);
+}
+
+.catalog-list-item:is(:hover, :focus) .favorites-button {
+  color: var(--white-color);
 }
 
 .catalog-item-text {
