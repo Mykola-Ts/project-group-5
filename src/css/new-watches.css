@@ -32,10 +32,6 @@
 /* ----------------min-width: 768px---------------- */
 
 @media (min-width: 768px) {
-  .new-watches {
-    padding-bottom: 128px;
-  }
-
   .new-watches-text {
     margin-bottom: 40px;
   }
