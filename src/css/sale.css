@@ -1,5 +1,9 @@
 /* ---------------- SALE ---------------- */
 
+.sale {
+  padding-bottom: 80px;
+}
+
 .sale-title {
   margin-bottom: 40px;
 }
@@ -115,6 +119,10 @@
 /* ----------------min-width: 768px---------------- */
 
 @media screen and (min-width: 768px) {
+  .sale {
+    padding-bottom: 128px;
+  }
+
   .sale-wrap {
     max-width: 572px;
     margin-left: auto;
@@ -140,6 +148,10 @@
 /* ----------------min-width: 1280px---------------- */
 
 @media screen and (min-width: 1280px) {
+  .sale {
+    padding-bottom: 160px;
+  }
+
   .sale-wrap {
     display: flex;
     max-width: 981px;

@@ -1,39 +1,128 @@
+/* ---------------- BUY-NOW ---------------- */
 .backdrop {
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
+  z-index: 1;
 
   width: 100vw;
   height: 100vh;
 
-  background-color: var(--background-color-backdrop: );
+  background-color: var(--background-color-backdrop);
+
+  transition: opacity var(--transition-duration)
+      var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
+}
+
+.backdrop.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .modal {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0) scale(1);
 
-  max-width: 335px;
-  width: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  max-width: 335px;
+  width: calc(100% - 40px);
   padding: 40px 20px;
+  scale: 1;
+
+  overflow-y: scroll;
+
   background-color: var(--white-color);
-  opacity: 1;
   box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
     0px 0px 130.6px rgba(0, 0, 0, 0.037963),
     0px 0px 71.0296px rgba(0, 0, 0, 0.0303704),
     0px 0px 36.2375px rgba(0, 0, 0, 0.025),
     0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
     0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
-  scale: 1;
+  opacity: 1;
 
   transition: scale var(--transition-duration) var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
+}
+
+.is-hidden .modal {
+  opacity: 0;
+  scale: 0;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  color: var(--black-color);
+
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus,
+.modal-close-button:active {
+  background-color: var(--dark-green-color);
+  color: var(--white-color);
+}
+
+.modal-close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-close-cross {
+  fill: currentColor;
+}
+
+.card-text-wrap {
+  max-width: 276px;
+}
+
+.card-picture {
+  margin-bottom: 14px;
+}
+
+.modal-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-title {
+  padding-right: 20px;
+  margin-bottom: 4px;
+
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  color: var(--black-color);
+}
+
+.card-price {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+
+  color: var(--sub-color-text);
 }
 
 @media screen and (min-width: 768px) {
@@ -55,26 +144,6 @@
   }
 }
 
-.modal-close-button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  color: var(--black-color);
-  border: none;
-  transition: background-color var(--transition-duration)
-      var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
-}
-
-.modal-close-icon {
-  width: 20px;
-  height: 20px;
-}
-
 @media screen and (min-width: 768px) {
   .modal-close-button {
     width: 24px;
@@ -87,100 +156,42 @@
   }
 }
 
-.modal-close-cross {
-  fill: currentColor;
-}
-
-.modal-close-button:hover,
-.modal-close-button:focus,
-.modal-close-button:active {
-  background-color: var(--dark-green-color);
-  color: var(--white-color);
-}
-
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.is-hidden .modal {
-  opacity: 0;
-  scale: 0;
-}
-
-.card-text-wrap {
-  max-width: 276px;
-}
-
-.card-picture {
-  margin-bottom: 14px;
-}
-
-.modal-image {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-title {
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: var(--black-color);
-  padding-right: 20px;
-  margin-bottom: 4px;
-}
-
-.card-price {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: -0.02em;
-  color: rgba(20, 20, 20, 0.5);
-}
-
 .modal-box {
   margin-bottom: 18px;
+}
+
+.modal-box:last-child {
+  margin-bottom: 20px;
 }
 
 .modal-label {
   display: flex;
   flex-direction: column;
   gap: 12px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  color: var(--black-color);
-}
 
-@media screen and (min-width: 768px) {
-  .modal-label {
-    font-size: 14px;
-    line-height: 1.29;
-  }
+  color: var(--black-color);
 }
 
 .modal-input {
   height: 42px;
   padding: 12px 16px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: rgba(20, 20, 20, 0.5);
-  border: 1px solid rgba(20, 20, 20, 0.5);
+
+  color: var(--sub-color-text);
+  border: 1px solid var(--sub-color-text);
+
   border-radius: 8px;
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
-}
-
-@media screen and (min-width: 768px) {
-  .modal-input {
-    font-size: 16px;
-    line-height: 1.12;
-  }
 }
 
 .modal-input:hover,
@@ -190,29 +201,25 @@
 }
 
 .modal-input:not(:placeholder-shown):required:invalid {
-  border-color: crimson;
+  border-color: #dc143c;
 }
 
 .modal-comment {
-  resize: none;
   min-height: 170px;
   padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+
   font-family: 'Epilogue', sans-serif;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: rgba(20, 20, 20, 0.5);
-  border: 1px solid rgba(20, 20, 20, 0.5);
-  border-radius: 8px;
+
+  color: var(--sub-color-text);
+  border: 1px solid var(--sub-color-text);
+
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
-}
-
-@media screen and (min-width: 768px) {
-  .modal-comment {
-    font-size: 16px;
-    line-height: 1.12;
-  }
 }
 
 .modal-comment:hover,
@@ -223,7 +230,6 @@
 
 .button-submit {
   width: 100%;
-  margin-top: 20px;
   margin-bottom: 12px;
 }
 
@@ -236,13 +242,35 @@
   color: rgba(20, 20, 20, 0.4);
 }
 
+.modal-link {
+  text-decoration: underline;
+}
+
+/* ---------------- MEDIA-HERO ---------------- */
+
+/* ----------------min-width: 768px---------------- */
+
+@media screen and (min-width: 768px) {
+  .modal-label {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-input {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .modal-comment {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+}
+
+/* ----------------min-width: 1280px---------------- */
+
 @media screen and (min-width: 1280px) {
   .modal-text {
     padding-right: 100px;
   }
-}
-
-.modal-link {
-  text-decoration: underline;
-  color: currentColor;
 }
