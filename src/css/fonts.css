@@ -11,6 +11,7 @@
     url('../fonts/EpilogueLight.svg#EpilogueLight') format('svg');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 /* ---------------- Epilogue Regular ---------------- */
@@ -24,6 +25,7 @@
     url('../fonts/EpilogueRegular.svg#EpilogueRegular') format('svg');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 /* ---------------- Epilogue SemiBold ---------------- */
@@ -37,4 +39,5 @@
     url('../fonts/EpilogueSemiBold.svg#EpilogueSemiBold') format('svg');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
