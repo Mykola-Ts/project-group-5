@@ -1,4 +1,5 @@
 /* ---------------- HEADER ---------------- */
+
 .header {
   position: absolute;
   left: 0;
@@ -31,6 +32,7 @@
   font-size: 12px;
   line-height: 1;
   letter-spacing: -0.03em;
+
   color: var(--white-color);
 }
 
@@ -38,14 +40,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin: 0;
   padding: 0;
-  background-color: transparent;
   border: none;
-  outline: none;
-  fill: var(--white-color);
 
+  color: var(--white-color);
+  background-color: transparent;
   border: 1px solid transparent;
+  outline: none;
+
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
 }
@@ -54,29 +58,42 @@
   border-color: var(--white-color);
 }
 
+.mobile-menu-open {
+  fill: currentColor;
+}
+
+.mobile-menu-close {
+  fill: currentColor;
+}
+
 .menu-container {
-  display: none;
+  position: fixed;
   top: 0;
   left: 0;
-  flex-direction: column;
-  gap: 200px;
-  width: 100vw;
-  height: 100vh;
+  transform: translateX(0);
+  transform-origin: top center;
+
+  width: 100%;
+  height: 100%;
   padding-top: 29px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
   background-color: var(--dark-green-color);
-  transform: translateX(100%);
+
   transition: transform var(--transition-duration)
     var(--transition-timing-function);
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translateX(-100%);
   position: fixed;
+
   display: flex;
+  flex-direction: column;
+  gap: 200px;
 }
 
 .mobile-link-container {
@@ -88,14 +105,18 @@
 
 .address-link {
   display: none;
+
+  padding: 17px 35px;
+  margin-left: auto;
+  border-radius: 8px;
+
   font-size: 9px;
   line-height: 1.33;
+
   color: var(--white-color);
-  margin-left: auto;
-  padding: 17px 35px;
-  border: 1px solid var(--dark-green-color);
-  border-radius: 8px;
   background-color: var(--dark-green-color);
+  border: 1px solid var(--dark-green-color);
+
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
 }
@@ -129,8 +150,8 @@
 
   .header-logo {
     width: 19px;
-    height: 19px;
     max-width: initial;
+    height: 19px;
   }
 
   .header-caption {
@@ -140,13 +161,16 @@
   .menu-container {
     position: static;
     transform: translateX(0);
+
     display: flex;
-    height: initial;
     flex-direction: row;
     gap: 40px;
+
+    height: initial;
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+
     background-color: initial;
   }
 
@@ -160,11 +184,13 @@
 
   .mobile-menu {
     display: flex;
+
     width: 100%;
   }
 
   .mobile-link-container {
     flex-direction: row;
+
     margin-right: auto;
   }
 
