@@ -85,21 +85,6 @@
   gap: 14px;
 }
 
-.mobile-nav-link {
-  text-transform: uppercase;
-  color: var(--white-color);
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size var(--transition-duration)
-    var(--transition-timing-function);
-}
-
-.mobile-nav-link:is(:hover, :focus) {
-  background-size: 100% 2px;
-}
-
 .address-link {
   display: none;
   font-size: 9px;
