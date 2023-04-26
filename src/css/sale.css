@@ -169,4 +169,8 @@
   .sale-description-price {
     margin-bottom: 20px;
   }
+
+  .sale-cards img {
+    max-width: initial;
+  }
 }
