@@ -23,6 +23,7 @@ pagination: {
       '"></span>'
     );
   },
+
   formatFractionCurrent: function (number) {
     return number < 10 ? '0' + number : number;
   },
@@ -30,6 +31,12 @@ pagination: {
     return number < 10 ? '0' + number : number;
   },
 },
+
+  autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
 });
 
 

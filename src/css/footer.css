@@ -40,14 +40,7 @@
   display: block;
 }
 
-.footer-nav-link {
-  text-transform: uppercase;
-
-  color: var(--white-color);
-}
-
 .footer-address-link,
-.footer-nav-link,
 .copirate-item {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
@@ -114,7 +107,6 @@
   .footer-container-wrap {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 152px;
   }
 
@@ -155,6 +147,15 @@
 /* ----------------min-width: 1280px---------------- */
 
 @media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 104px;
+    padding-bottom: 32px;
+  }
+
+  .footer-container-wrap {
+    margin-bottom: 174px;
+  }
+
   .footer-contact {
     margin-right: 355px;
   }
