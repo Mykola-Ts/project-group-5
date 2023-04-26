@@ -1,14 +1,8 @@
-<header>
-  <div class="container">
+<header class="header container">
+  <div class="header-wrap">
     <div class="header-container">
       <a href="./index.html" class="header-link link">
-        <img
-          src="./img/logo.svg"
-          class="header-logo"
-          width="14"
-          height="14"
-          alt="Logo"
-        />
+        <img src="./img/logo.svg" class="header-logo" alt="Logo" />
         <span class="header-caption">thewatchspot</span>
       </a>
 
@@ -17,47 +11,47 @@
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <img
-          src="./img/menu-open.svg"
-          width="20"
-          height="14"
-          alt="Mobile menu open"
-        />
+        <svg class="mobile-menu-open" width="24" height="24">
+          <use href="./img/icons.svg#icon-menu-open"></use>
+        </svg>
       </button>
     </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="mobile-menu-close" width="24" height="24">
-          <use href="./img/sprite.svg#icon-cross-black"></use>
-        </svg>
-      </button>
-
-      <div class="mobile-logo-container">
+      <div class="header-container headline-wrap">
         <a href="./index.html" class="header-link link">
-          <img
-            src="./img/logo.svg"
-            class="header-logo"
-            width="14"
-            height="14"
-            alt="Logo"
-          />
+          <img src="./img/logo.svg" class="header-logo" alt="Logo" />
           <span class="header-caption">thewatchspot</span>
         </a>
+
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile-menu-close" width="24" height="24">
+            <use href="./img/icons.svg#icon-cross-black"></use>
+          </svg>
+        </button>
       </div>
 
       <div class="mobile-menu">
         <ul class="mobile-link-container list">
           <li>
-            <a href="#about-us" class="link mobile-nav-link">About us</a>
+            <a href="#about-us" class="link mobile-nav-link js-menu-link"
+              >About us</a
+            >
           </li>
           <li>
-            <a href="#catalog" class="link mobile-nav-link">Catalog</a>
+            <a href="#catalog" class="link mobile-nav-link js-menu-link"
+              >Catalog</a
+            >
           </li>
           <li>
-            <a href="#sale" class="link mobile-nav-link">Sale</a>
+            <a href="#sale" class="link mobile-nav-link js-menu-link">Sale</a>
           </li>
         </ul>
+        <address class="mobile-nav-tel">
+          <a class="address-link link" href="tel:+380684439426"
+            >+380 (68) 443-94-26
+          </a>
+        </address>
       </div>
     </div>
   </div>

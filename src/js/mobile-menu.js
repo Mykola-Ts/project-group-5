@@ -9,6 +9,17 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
+    const menuLinks = document.querySelectorAll('.js-menu-link');
+const closeMenu = () => {
+  mobileMenu.classList.remove('is-open');
+  openMenuBtn.setAttribute('aria-expanded', false);
+  bodyScrollLock.enableBodyScroll(document.body);
+}
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
