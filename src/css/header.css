@@ -1,12 +1,13 @@
-/*----------Header style start----------*/
+/* ---------------- HEADER ---------------- */
 .header {
   position: absolute;
-  width: 100%;
-  padding-top: 29px;
   left: 0;
   right: 0;
-  margin: auto;
   z-index: 2;
+
+  width: 100%;
+  padding-top: 29px;
+  margin: auto;
 }
 
 .header-container {
@@ -109,6 +110,10 @@
   font-style: normal;
 }
 
+/* ---------------- MEDIA-HEADER ---------------- */
+
+/* ----------------min-width: 768px---------------- */
+
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 20px;
@@ -172,6 +177,8 @@
     display: block;
   }
 }
+
+/* ----------------min-width: 1280px---------------- */
 
 @media screen and (min-width: 1280px) {
   .header-wrap {

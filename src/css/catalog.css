@@ -46,6 +46,8 @@
 
   background-color: transparent;
   color: rgba(20, 20, 20, 0.1);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .favorites-icon {
@@ -61,7 +63,7 @@
   stroke: rgba(20, 20, 20, 0.1);
 }
 
-.catalog-list-item:is(:hover, :focus) .favorites-button {
+.catalog-item-link:is(:hover, :focus) + .favorites-button {
   color: var(--white-color);
 }
 
