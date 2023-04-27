@@ -7,70 +7,74 @@
     <title>The Watch Spot</title>
     
     <script type="module" crossorigin src="/project-group-5/assets/index-74e6a67d.js"></script>
-    <link rel="stylesheet" href="/project-group-5/assets/index-fea08dfe.css">
+    <link rel="stylesheet" href="/project-group-5/assets/index-3127ced9.css">
   </head>
   <body>
     <!-- Header -->
-    <header class="header container">
-  <div class="header-wrap">
-    <div class="header-container">
-      <a href="./index.html" class="header-link link">
-        <img src="/project-group-5/assets/logo-1eccccbd.svg" class="header-logo" alt="Logo" />
-        <span class="header-caption">thewatchspot</span>
+    <header class="header">
+  <div class="header-container container">
+    <div class="header-container-wrap">
+      <a href="./index.html" class="header-logo logo link">
+        <img src="/project-group-5/assets/logo-1eccccbd.svg" class="header-logo-img" alt="Logo" />
+        <span class="header-logo-text">thewatchspot</span>
       </a>
 
       <button
-        class="menu-toggle js-open-menu"
+        class="mobile-menu-btn js-open-menu"
         aria-expanded="false"
-        ria-controls="mobile-menu"
+        aria-controls="mobile-menu"
       >
-        <svg class="mobile-menu-open" width="24" height="24">
+        <svg class="mobile-menu-btn-icon" width="24" height="24">
           <use href="/project-group-5/assets/icons-7acd0e41.svg#icon-menu-open"></use>
         </svg>
       </button>
     </div>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <div class="header-container headline-wrap">
-        <a href="./index.html" class="header-link link">
-          <img src="/project-group-5/assets/logo-1eccccbd.svg" class="header-logo" alt="Logo" />
-          <span class="header-caption">thewatchspot</span>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="header-container-wrap mobile-menu-wrap">
+        <a href="./index.html" class="header-logo logo link">
+          <img src="/project-group-5/assets/logo-1eccccbd.svg" class="header-logo-img" alt="Logo" />
+          <span class="header-logo-text">thewatchspot</span>
         </a>
-        <button class="menu-toggle js-close-menu">
-          <svg class="mobile-menu-close" width="24" height="24">
+
+        <button class="mobile-menu-btn js-close-menu">
+          <svg class="mobile-menu-btn-icon" width="24" height="24">
             <use href="/project-group-5/assets/icons-7acd0e41.svg#icon-cross-black"></use>
           </svg>
         </button>
       </div>
+    </div>
 
-      <div class="mobile-menu">
-        <ul class="mobile-link-container list">
-          <li>
-            <a
-              href="#about-us"
-              class="link mobile-nav-link nav-link js-menu-link"
-              >About us</a
-            >
-          </li>
-          <li>
-            <a
-              href="#catalog"
-              class="link mobile-nav-link nav-link js-menu-link"
-              >Catalog</a
-            >
-          </li>
-          <li>
-            <a href="#sale" class="link mobile-nav-link nav-link js-menu-link"
-              >Sale</a
-            >
-          </li>
-        </ul>
-        <address class="mobile-nav-tel">
-          <a class="address-link link" href="tel:+380684439426"
-            >+380 (68) 443-94-26
-          </a>
-        </address>
-      </div>
+    <div class="header-container-wrap nav-wrap">
+      <ul class="header-nav-list list">
+        <li class="header-nav-item">
+          <a
+            href="#about-us"
+            class="mobile-nav-link nav-link link js-menu-link js-menu-container"
+            >About us</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a
+            href="#catalog"
+            class="mobile-nav-link nav-link link js-menu-link js-menu-container"
+            >Catalog</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a
+            href="#sale"
+            class="mobile-nav-link nav-link link js-menu-link js-menu-container"
+            >Sale</a
+          >
+        </li>
+      </ul>
+
+      <address class="header-address">
+        <a class="header-address-tel link" href="tel:+380684439426"
+          >+380 (68) 443-94-26
+        </a>
+      </address>
     </div>
   </div>
 </header>
@@ -80,8 +84,10 @@
       <section class="hero section">
   <div class="hero-container container">
     <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+
     <div class="hero-swiper swiper">
       <ul class="swiper-wrapper list">
+
         <li class="swiper-slide">
           <picture
             ><source
@@ -105,6 +111,7 @@
               height="255"
           /></picture>
         </li>
+
         <li class="swiper-slide">
           <picture
             ><source
@@ -128,6 +135,7 @@
               height="255"
           /></picture>
         </li>
+
         <li class="swiper-slide">
           <picture
             ><source
@@ -151,6 +159,7 @@
               height="255"
           /></picture>
         </li>
+
         <li class="swiper-slide">
           <picture
             ><source
@@ -174,6 +183,7 @@
               height="255"
           /></picture>
         </li>
+
         <li class="swiper-slide">
           <picture
             ><source
@@ -198,17 +208,20 @@
           /></picture>
         </li>
       </ul>
+
       <div class="swiper-nav">
         <button type="button" class="swiper-button button-prev">
           <svg width="18" height="18" class="swiper-button-icon">
             <use href="/project-group-5/assets/icons-7acd0e41.svg#icon-chevron-left"></use>
           </svg>
         </button>
+
         <button type="button" class="swiper-button button-next">
           <svg width="18" height="18" class="swiper-button-icon">
             <use href="/project-group-5/assets/icons-7acd0e41.svg#icon-chevron-right"></use>
           </svg>
         </button>
+        
         <div class="swiper-pagination">
           <span class="swiper-pagination-current">1</span>
           <span class="pagination-line paginationLine"></span>
@@ -216,11 +229,13 @@
         </div>
       </div>
     </div>
+
     <p class="hero-descr">
       Our watches are not just timepieces, but also an expression of your
       personality and lifestyle. From classic designs to modern ones, we have a
       watch to suit every taste and occasion.
     </p>
+
     <picture class="hero-img">
       <source
         srcset="/project-group-5/assets/hero-img-fc1b4735.webp 1x, /project-group-5/assets/hero-img@2x-8ec15fa4.webp 2x"
@@ -279,6 +294,7 @@
         Browse our collection today and discover the perfect watch for you.
       </p>
     </div>
+
     <video
       width="704"
       height="465"
@@ -291,21 +307,15 @@
       <source src="/project-group-5/assets/watchspot-57f36f50.webm" type="video/webm" />
       <source src="/project-group-5/assets/watchspot-7fe8b950.mp4" type="video/mp4" />
     </video>
-    <!-- <figure class="about-us-gif">
-      <img
-        src="./img/watchspot-mob.gif"
-        alt="Watch presentation"
-        width="704"
-        height="465"
-      />
-    </figure> -->
   </div>
 </section>
 
       <!-- Catalog -->
       <section class="section" id="catalog">
   <div class="container-catalog container">
+
     <h2 class="catalog-title title">Catalog</h2>
+
     <ul class="catalog-list list">
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
@@ -368,6 +378,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -426,6 +437,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -486,6 +498,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -546,6 +559,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -604,6 +618,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -662,6 +677,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -722,6 +738,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -780,6 +797,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -828,6 +846,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -878,6 +897,7 @@
           </svg>
         </button>
       </li>
+
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -926,6 +946,7 @@
           </svg>
         </button>
       </li>
+      
       <li class="catalog-list-item">
         <a href="" class="catalog-item-link link">
           <div class="catalog-item-thumb">
@@ -976,6 +997,7 @@
         </button>
       </li>
     </ul>
+
     <button type="button" class="catalog-button button" data-modal-open>
       Buy now
     </button>
@@ -985,10 +1007,13 @@
       <!-- New watches -->
       <section class="new-watches section">
   <div class="container">
+
     <h2 class="new-watches-title">New watches</h2>
+
     <h3 class="new-watches-text title">
       Green And Bronze—The Match Made In Heaven
     </h3>
+    
     <ul class="new-watches-list list">
       <li class="new-watches-list-item">
         <picture>
@@ -1066,6 +1091,7 @@
       <section class="sale section" id="sale">
   <div class="container">
     <h2 class="sale-title title">Sale</h2>
+
     <div class="sale-wrap">
       <div class="sale-cards">
         <ul class="sale-cards-list list">
@@ -1094,6 +1120,7 @@
                 height="146"
             /></picture>
           </li>
+
           <li class="sale-cards-item">
             <picture>
               <source
@@ -1119,6 +1146,7 @@
                 height="146"
             /></picture>
           </li>
+
           <li class="sale-cards-item">
             <picture>
               <source
@@ -1144,6 +1172,7 @@
                 height="146"
             /></picture>
           </li>
+
           <li class="sale-cards-item">
             <picture>
               <source
@@ -1170,6 +1199,7 @@
             /></picture>
           </li>
         </ul>
+
         <picture>
           <source
             srcset="/project-group-5/assets/sale-1-tablet-1x-c5cf97a6.webp 1x, /project-group-5/assets/sale-1-tablet-2x-7b8e79aa.webp 2x"
@@ -1194,6 +1224,7 @@
             height="614"
         /></picture>
       </div>
+
       <div class="sale-description">
         <div class="sale-description-wrap">
           <h3 class="sale-watch-name">Greenlane Watch By Police For MenHT</h3>
@@ -1205,6 +1236,7 @@
             <s class="sale-price-item">€1000</s>
           </p>
         </div>
+
         <div class="sale-description-wrap">
           <h4 class="sale-about-watch">Description</h4>
           <p class="sale-description-text">
@@ -1215,6 +1247,7 @@
             through a black IP bracelet with matching crown and pushers.
           </p>
         </div>
+
         <div class="sale-description-wrap">
           <h4 class="sale-about-watch">DETAILS & FEATUREStion</h4>
           <ul class="list">
@@ -1244,9 +1277,10 @@
     <div class="footer-container-wrap">
       <div class="footer-wrap">
         <div class="footer-contact">
-          <a href="./index.html" class="footer-logo link">
+          <a href="./index.html" class="footer-logo logo link">
             <img src="/project-group-5/assets/logo-1eccccbd.svg" alt="Logo" width="50" height="50" />
           </a>
+
           <address class="footer-address">
             <ul class="footer-address-list list">
               <li class="footer-address-item">
@@ -1268,6 +1302,7 @@
             </ul>
           </address>
         </div>
+
         <nav class="footer-nav">
           <ul class="footer-nav-list list">
             <li class="footer-nav-item">
@@ -1286,6 +1321,7 @@
           </ul>
         </nav>
       </div>
+
       <ul class="footer-social-list list">
         <li class="footer-social-item">
           <a
@@ -1325,6 +1361,7 @@
         </li>
       </ul>
     </div>
+
     <div class="footer-copirate">
       <p class="copirate-text">
         &copy;2022 The Watch Spot. All rights reserved.
@@ -1348,6 +1385,7 @@
         ></use>
       </svg>
     </button>
+
     <div class="card-wrap">
       <picture class="card-picture">
         <source
@@ -1374,6 +1412,7 @@
         <p class="card-price">€395</p>
       </div>
     </div>
+
     <form class="modal-form">
       <div class="modal-box">
         <label class="modal-label"
@@ -1389,6 +1428,7 @@
           />
         </label>
       </div>
+
       <div class="modal-box">
         <label class="modal-label"
           >Email
