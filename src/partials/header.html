@@ -1,63 +1,67 @@
-<header class="header container">
-  <div class="header-wrap">
-    <div class="header-container">
-      <a href="./index.html" class="header-link link">
-        <img src="./img/logo.svg" class="header-logo" alt="Logo" />
-        <span class="header-caption">thewatchspot</span>
+<header class="header">
+  <div class="header-container container">
+    <div class="header-container-wrap">
+      <a href="./index.html" class="header-logo logo link">
+        <img src="./img/logo.svg" class="header-logo-img" alt="Logo" />
+        <span class="header-logo-text">thewatchspot</span>
       </a>
 
       <button
-        class="menu-toggle js-open-menu"
+        class="mobile-menu-btn js-open-menu"
         aria-expanded="false"
-        ria-controls="mobile-menu"
+        aria-controls="mobile-menu"
       >
-        <svg class="mobile-menu-open" width="24" height="24">
+        <svg class="mobile-menu-btn-icon" width="24" height="24">
           <use href="./img/icons.svg#icon-menu-open"></use>
         </svg>
       </button>
     </div>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <div class="header-container headline-wrap">
-        <a href="./index.html" class="header-link link">
-          <img src="./img/logo.svg" class="header-logo" alt="Logo" />
-          <span class="header-caption">thewatchspot</span>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="header-container-wrap mobile-menu-wrap">
+        <a href="./index.html" class="header-logo logo link">
+          <img src="./img/logo.svg" class="header-logo-img" alt="Logo" />
+          <span class="header-logo-text">thewatchspot</span>
         </a>
-        <button class="menu-toggle js-close-menu">
-          <svg class="mobile-menu-close" width="24" height="24">
+
+        <button class="mobile-menu-btn js-close-menu">
+          <svg class="mobile-menu-btn-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-cross-black"></use>
           </svg>
         </button>
       </div>
+    </div>
 
-      <div class="mobile-menu">
-        <ul class="mobile-link-container list">
-          <li>
-            <a
-              href="#about-us"
-              class="link mobile-nav-link nav-link js-menu-link"
-              >About us</a
-            >
-          </li>
-          <li>
-            <a
-              href="#catalog"
-              class="link mobile-nav-link nav-link js-menu-link"
-              >Catalog</a
-            >
-          </li>
-          <li>
-            <a href="#sale" class="link mobile-nav-link nav-link js-menu-link"
-              >Sale</a
-            >
-          </li>
-        </ul>
-        <address class="mobile-nav-tel">
-          <a class="address-link link" href="tel:+380684439426"
-            >+380 (68) 443-94-26
-          </a>
-        </address>
-      </div>
+    <div class="header-container-wrap nav-wrap">
+      <ul class="header-nav-list list">
+        <li class="header-nav-item">
+          <a
+            href="#about-us"
+            class="mobile-nav-link nav-link link js-menu-link js-menu-container"
+            >About us</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a
+            href="#catalog"
+            class="mobile-nav-link nav-link link js-menu-link js-menu-container"
+            >Catalog</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a
+            href="#sale"
+            class="mobile-nav-link nav-link link js-menu-link js-menu-container"
+            >Sale</a
+          >
+        </li>
+      </ul>
+
+      <address class="header-address">
+        <a class="header-address-tel link" href="tel:+380684439426"
+          >+380 (68) 443-94-26
+        </a>
+      </address>
     </div>
   </div>
 </header>

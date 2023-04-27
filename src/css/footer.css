@@ -17,7 +17,14 @@
 
 .footer-logo {
   display: block;
+
+  width: 50px;
+  height: 50px;
   margin-bottom: 40px;
+}
+
+.footer-logo:is(:hover, :focus, :active) {
+  transform: scale(1.2);
 }
 
 .footer-address-list {
@@ -95,7 +102,7 @@
   margin-right: 14px;
 }
 
-/* ---------------- MEDIA-FOOTER ---------------- */
+/* ---------------- FOOTER-MEDIA ---------------- */
 
 /* ----------------min-width: 768px---------------- */
 

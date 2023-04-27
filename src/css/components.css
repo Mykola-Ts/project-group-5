@@ -1,4 +1,5 @@
 /* ---------------- COMPONENTS ---------------- */
+
 .button {
   padding: 17px 34px;
   border: 1px solid var(--dark-green-color);
@@ -28,6 +29,16 @@
   letter-spacing: -0.02em;
 
   color: var(--dark-green-color);
+}
+
+.logo {
+  transform: scale(1);
+
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+.logo:is(:hover, :focus, :active) {
+  transform: scale(1.1);
 }
 
 .nav-link {
