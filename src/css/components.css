@@ -1,16 +1,16 @@
 /* ---------------- COMPONENTS ---------------- */
 
 .button {
-  padding: 17px 34px;
   border: 1px solid var(--dark-green-color);
   border-radius: 8px;
+  padding: 17px 34px;
 
   font-size: 12px;
   line-height: 1.17;
   text-transform: uppercase;
 
-  color: var(--white-color);
   background-color: var(--dark-green-color);
+  color: var(--white-color);
 
   transition: border var(--transition-duration)
     var(--transition-timing-function);
@@ -31,16 +31,6 @@
   color: var(--dark-green-color);
 }
 
-.logo {
-  transform: scale(1);
-
-  transition: transform var(--transition-duration)
-    var(--transition-timing-function);
-}
-.logo:is(:hover, :focus, :active) {
-  transform: scale(1.1);
-}
-
 .nav-link {
   position: relative;
 
@@ -57,11 +47,10 @@
 .nav-link::after {
   content: ' ';
 
-  transform: scaleX(0);
-  transform-origin: right;
-
   position: absolute;
   left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
 
   display: block;
 
@@ -79,8 +68,6 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-
-/* ---------------- COMPONENTS-MEDIA ---------------- */
 
 /* ----------------min-width: 768px---------------- */
 

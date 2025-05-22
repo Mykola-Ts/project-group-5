@@ -23,10 +23,6 @@
   margin-bottom: 40px;
 }
 
-.footer-logo:is(:hover, :focus, :active) {
-  transform: scale(1.2);
-}
-
 .footer-address-list {
   color: var(--white-color);
 }
@@ -53,6 +49,7 @@
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
+
   transition: background-size var(--transition-duration)
     var(--transition-timing-function);
 }
@@ -75,9 +72,9 @@
 .footer-social-link {
   display: flex;
 
-  padding: 8px;
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 8px;
 
   color: var(--white-color);
 
@@ -99,10 +96,9 @@
 
 .copirate-item:not(:last-child) {
   display: inline-block;
+
   margin-right: 14px;
 }
-
-/* ---------------- FOOTER-MEDIA ---------------- */
 
 /* ----------------min-width: 768px---------------- */
 
@@ -114,6 +110,7 @@
   .footer-container-wrap {
     display: flex;
     justify-content: space-between;
+    
     margin-bottom: 152px;
   }
 

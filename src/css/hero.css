@@ -4,8 +4,8 @@
   padding-top: 122px;
   padding-bottom: 40px;
 
-  color: var(--white-color);
   background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .hero-title {
@@ -44,8 +44,8 @@
   height: 32px;
   border-radius: 8px;
 
-  color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.5);
 
   transition: color var(--transition-timing-function) var(--transition-duration),
@@ -98,8 +98,6 @@
 
   font-weight: 300;
 }
-
-/* ---------------- HERO-MEDIA ---------------- */
 
 /* ----------------min-width: 768px---------------- */
 
