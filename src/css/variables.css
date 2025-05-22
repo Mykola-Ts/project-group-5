@@ -8,6 +8,7 @@
   --background-color-backdrop: rgba(30, 40, 39, 0.7);
   --gray-color: rgba(255, 255, 255, 0.5);
   --sub-color-text: rgba(20, 20, 20, 0.5);
+  --favorites-color: #ffa900;
 
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 250ms;
