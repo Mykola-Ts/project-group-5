@@ -1,7 +1,11 @@
 <header class="header">
   <div class="header-container container">
     <div class="header-container-wrap">
-      <a href="./index.html" class="header-logo logo link">
+      <a
+        href="./index.html"
+        class="header-logo logo link"
+        aria-label="Site logo"
+      >
         <img src="./img/logo.svg" class="header-logo-img" alt="Logo" />
         <span class="header-logo-text">thewatchspot</span>
       </a>
@@ -10,6 +14,7 @@
         class="mobile-menu-btn js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
+        aria-label="Open mobile menu"
       >
         <svg class="mobile-menu-btn-icon" width="24" height="24">
           <use href="./img/icons.svg#icon-menu-open"></use>
@@ -19,12 +24,19 @@
 
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <div class="header-container-wrap mobile-menu-wrap">
-        <a href="./index.html" class="header-logo logo link">
+        <a
+          href="./index.html"
+          class="header-logo logo link"
+          aria-label="Site logo"
+        >
           <img src="./img/logo.svg" class="header-logo-img" alt="Logo" />
           <span class="header-logo-text">thewatchspot</span>
         </a>
 
-        <button class="mobile-menu-btn js-close-menu">
+        <button
+          class="mobile-menu-btn js-close-menu"
+          aria-label="Close mobile menu"
+        >
           <svg class="mobile-menu-btn-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-cross-black"></use>
           </svg>

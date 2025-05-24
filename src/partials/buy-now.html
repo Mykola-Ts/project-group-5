@@ -1,6 +1,10 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="modal-close-button" data-modal-close>
+    <button
+      class="modal-close-button"
+      aria-label="Close modal window"
+      data-modal-close
+    >
       <svg class="modal-close-icon" width="12" height="12">
         <use
           class="modal-close-cross"
@@ -95,12 +99,19 @@
           ></textarea>
         </label>
       </div>
-      
-      <button type="submit" class="button-submit button">submit</button>
+
+      <button
+        type="submit"
+        class="button-submit button"
+        aria-label="Send message"
+      >
+        submit
+      </button>
       <p class="modal-text">
         By clicking on “Send message” button, you agree to our
-        <a class="modal-link link" href="">Privacy Policy</a>, and allow Promodo
-        to use this information for marketing purposes.
+        <a href="" class="modal-link link" aria-label="Privacy Policy"
+          >Privacy Policy</a
+        >, and allow Promodo to use this information for marketing purposes.
       </p>
     </form>
   </div>
