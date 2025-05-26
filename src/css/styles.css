@@ -1,5 +1,8 @@
 /* ---------------- STYLES ---------------- */
 
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 @import url('./fonts.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css');
 @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');

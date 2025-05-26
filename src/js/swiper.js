@@ -1,6 +1,16 @@
-const swiper = new Swiper('.hero-swiper', {
-  effect: 'fade',
+import Swiper from 'swiper';
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCube,
+  Keyboard,
+} from 'swiper/modules';
 
+const swiper = new Swiper('.hero-swiper', {
+  modules: [Navigation, Pagination, Autoplay, EffectCube, Keyboard],
+
+  effect: 'cube',
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
