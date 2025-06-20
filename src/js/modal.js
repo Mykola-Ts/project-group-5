@@ -1,22 +1,37 @@
-(() => {
 const refs = {
-openModalBtn: document.querySelector("[data-modal-open]"),
-closeModalBtn: document.querySelector("[data-modal-close]"),
-modal: document.querySelector("[data-modal]"),
+  body: document.querySelector('body'),
+  openModalBtn: document.querySelector('.js-modal-open'),
+  closeModalBtn: document.querySelector('.js-modal-close'),
+  modal: document.querySelector('.js-modal'),
 };
 
-const openModal = () => {
-refs.modal.classList.remove("is-hidden");
-document.body.style.overflow = "hidden";
-refs.modal.style.overflow = "auto";
-};
+refs.openModalBtn.addEventListener('click', handlerOpenModal);
+refs.closeModalBtn.addEventListener('click', handlerCloseModal);
 
-const closeModal = () => {
-refs.modal.classList.add("is-hidden");
-document.body.style.overflow = "";
-refs.modal.style.overflow = "";
-};
+function handlerOpenModal() {
+  refs.modal.classList.remove('is-hidden');
+  refs.body.classList.add('open-modal');
 
-refs.openModalBtn.addEventListener("click", openModal);
-refs.closeModalBtn.addEventListener("click", closeModal);
-})();
+  refs.modal.addEventListener('click', handlerCloseModalByBackdrop);
+  window.addEventListener('keydown', handlerCloseModalByEscape);
+}
+
+function handlerCloseModal() {
+  refs.modal.classList.add('is-hidden');
+  refs.body.classList.remove('open-modal');
+
+  refs.modal.removeEventListener('click', handlerCloseModalByBackdrop);
+  window.removeEventListener('keydown', handlerCloseModalByEscape);
+}
+
+function handlerCloseModalByBackdrop(evt) {
+  if (evt.currentTarget === evt.target) {
+    handlerCloseModal();
+  }
+}
+
+function handlerCloseModalByEscape(evt) {
+  if (evt.code === 'Escape') {
+    handlerCloseModal();
+  }
+}

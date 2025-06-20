@@ -10,6 +10,11 @@ body {
   color: var(--black-color);
 }
 
+body.open-modal,
+body.open-mobile-menu {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
 
