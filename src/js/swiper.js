@@ -18,6 +18,7 @@ const swiper = new Swiper('.hero-swiper', {
   spaceBetween: 10,
   loop: true,
   keyboard: { enabled: true },
+  
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',

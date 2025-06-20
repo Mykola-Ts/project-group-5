@@ -8,10 +8,12 @@
 
   width: 100vw;
   height: 100vh;
+  padding: 20px;
 
   background-color: var(--background-color-backdrop);
   visibility: visible;
   opacity: 1;
+  overflow: auto;
 
   transition: opacity var(--transition-duration)
       var(--transition-timing-function),
@@ -25,10 +27,9 @@
 }
 
 .modal {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0) scale(1);
+  position: relative;
+  transform: scaleY(1);
+  transform-origin: top;
 
   display: flex;
   flex-direction: column;
@@ -38,6 +39,7 @@
   width: calc(100% - 40px);
   border-radius: 8px;
   padding: 40px 20px;
+  margin: 0 auto;
 
   background-color: var(--white-color);
   box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
@@ -47,6 +49,7 @@
     0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
     0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
   opacity: 1;
+  overflow: auto;
 
   transition: transform var(--transition-duration)
       var(--transition-timing-function),
@@ -54,7 +57,7 @@
 }
 
 .is-hidden .modal {
-  transform: translate(-50%, 0) scale(0);
+  transform: scaleY(0);
 
   opacity: 0;
 }
@@ -130,8 +133,10 @@
 
 @media screen and (min-width: 768px) {
   .modal {
-    transform: translate(-50%, -50%);
+    position: absolute;
+    transform: translate(-50%, -50%) scaleY(1);
     top: 50%;
+    left: 50%;
 
     flex-direction: initial;
     gap: 20px;
@@ -139,6 +144,10 @@
     max-width: 744px;
     width: calc(100% - 24px);
     padding: 40px;
+  }
+
+  .is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
   }
 }
 
