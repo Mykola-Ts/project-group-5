@@ -68,7 +68,7 @@
             name="email"
             placeholder="Enter your email"
             required
-            pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             title="Enter a valid email address (e.g. name@example.com)"
           />
         </label>
@@ -84,6 +84,7 @@
             placeholder="Enter card"
             required
             pattern="^[0-9]{16}$"
+            maxlength="16"
             title="Please enter a valid 16-digit card number"
           />
         </label>
