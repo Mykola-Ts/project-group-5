@@ -30,6 +30,8 @@
 }
 
 .sale-description {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   row-gap: var(--basic-row-gap-item-list);
@@ -44,8 +46,22 @@
   letter-spacing: -0.02em;
 }
 
-.sale-description-text {
+.sale-description-text,
+.sale-details {
+  transform: scaleY(1);
+  transform-origin: top;
+
   color: var(--sub-color-text);
+
+  transition: transform var(--transition-duration)
+      var(--transition-timing-function),
+    position var(--transition-duration) var(--transition-timing-function);
+}
+
+.sale-description-text.show-descr,
+.sale-details.show-details {
+  position: absolute;
+  transform: scaleY(0);
 }
 
 .product-tag {
@@ -79,6 +95,11 @@
 .sale-about-watch {
   position: relative;
 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
   margin-bottom: 17px;
 
   font-weight: 400;
@@ -86,6 +107,12 @@
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.sale-description-title {
+  padding-top: 1px;
 }
 
 .sale-about-watch::before {
@@ -100,13 +127,7 @@
   background-color: var(--black-color);
 }
 
-.sale-about-watch::after {
-  content: '';
-
-  position: absolute;
-  right: 0;
-  top: 50%;
-
+.sale-about-watch-item {
   display: block;
 
   width: 16px;
@@ -114,6 +135,31 @@
   margin-left: auto;
 
   background-color: var(--black-color);
+}
+
+.sale-about-watch-item::after {
+  content: '';
+
+  position: absolute;
+  transform: rotate(90deg) scaleX(0);
+  transform-origin: center;
+
+  display: block;
+
+  width: 16px;
+  height: 1px;
+
+  background-color: currentColor;
+
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.sale-description-wrap:has(.sale-description-text.show-descr)
+  .sale-about-watch-item::after,
+.sale-description-wrap:has(.sale-details.show-details)
+  .sale-about-watch-item::after {
+  transform: rotate(90deg) scaleX(1);
 }
 
 /* ----------------min-width: 768px---------------- */
