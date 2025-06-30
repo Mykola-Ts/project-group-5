@@ -47,14 +47,14 @@ The site consists of the following main sections:
 
 ## Useful Links
 
-[Live Demo](https://mykola-ts.github.io/project-group-5/) — deployed version of
-the website
+- [Live Demo](https://mykola-ts.github.io/project-group-5/) — deployed version
+  of the website
 
-[GitHub Repository](https://github.com/Mykola-Ts/project-group-5) — deployed
-version of the website
+- [GitHub Repository](https://github.com/Mykola-Ts/project-group-5) — deployed
+  version of the website
 
-[Figma Design](https://www.figma.com/design/LZQvuv5IZCMW8bNjJDqT5j/The-Watch-Spot--Copy-?node-id=0-1&p=f&t=3GaPn7ly5UAXZ1vV-0)
-— the project’s UI/UX design mockup
+- [Figma Design](https://www.figma.com/design/LZQvuv5IZCMW8bNjJDqT5j/The-Watch-Spot--Copy-?node-id=0-1&p=f&t=3GaPn7ly5UAXZ1vV-0)
+  — the project’s UI/UX design mockup
 
 ## Technologies Used
 
@@ -66,6 +66,10 @@ version of the website
 
 ## Libraries Used
 
+- [vite](https://vite.dev/) - next generation frontend tooling (dev server &
+  build tool)
+- [glob](https://www.npmjs.com/package/glob) - file path pattern matching (used
+  for dynamic input in builds)
 - [Swiper.js](https://swiperjs.com/) — responsive, touch-friendly sliders
 - [modern-normalize](https://github.com/sindresorhus/modern-normalize) — CSS
   normalization
@@ -134,8 +138,10 @@ version of the website
 - **Clean & Modular Code**  
   Code is split into logical modules.
 
-- **Lightweight & Fast**  
-  Optimized for performance with lazy-loaded scripts and minimal CSS overhead.
+- **Performance & Accessibility**  
+  The website achieves high performance, accessibility, best practices, and SEO
+  standards. Optimized code and structure ensure fast loading, smooth
+  interactions, and an inclusive, user-friendly experience across all devices.
 
 ## PageSpeed Results
 
@@ -153,6 +159,14 @@ strong performance across various categories, ensuring a smooth user experience.
 
 These results demonstrate that the website is optimized for both performance and
 user experience, ensuring fast loading times and high usability on all devices.
+
+## Validation Result
+
+The website has been tested with the
+[W3C Markup Validation Service](https://validator.w3.org/) and contains no
+validation errors or warnings.
+
+![Validation](./assets/validation-result.jpg)
 
 ## Installation & Setup
 
