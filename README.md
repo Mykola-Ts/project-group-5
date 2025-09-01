@@ -5,6 +5,20 @@ modern design, and precision. Find your perfect timepiece today.
 
 ![Brand logo](./assets/logo.jpg)
 
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Website Structure](#website-structure)
+- [Useful Links](#useful-links)
+- [Technologies Used](#technologies-used)
+- [Libraries Used](#libraries-used)
+- [Folder and File Structure](#folder-and-file-structure)
+- [Features](#features)
+- [PageSpeed Results](#pagespeed-results)
+- [Validation Result](#validation-result)
+- [Installation & Setup](#installation--setup)
+- [Authors](#authors)
+
 ## About the Project
 
 This project is a responsive single-page website developed for the
@@ -15,33 +29,40 @@ experience.
 
 ![Website start page](./assets/the-watch-spot.jpg)
 
-### Website Structure
+## Website Structure
 
 The site consists of the following main sections:
 
 - **Header** — contains the site logo, a navigation menu linking to key sections
   and a clickable phone number link that allows users to initiate a call
   directly from mobile devices;
+
 - **Hero** — a visually engaging section that featuring a welcoming headline, a
   featured banner image, a brief brand message about style and personality, and
   an image slider displaying various watch models;
+
 - **About Us** — introduces the brand’s philosophy and values through
   descriptive text, emphasizing luxury, precision, and personal expression. The
   section includes a short promotional video to visually reinforce the brand’s
   identity and craftsmanship;
+
 - **Catalog** — displays a selection of watch products in a responsive grid
   layout. Each card includes an image, product title, and an “add to favorites”
   button. When hovered, the card reveals a short product description, enhancing
   interactivity and user engagement. At the bottom of the section, a prominent
-  “Buy now” button opens a modal form for placing an order.
+  “Buy now” button opens a modal form for placing an order;
+
 - **New Watches** — highlights a featured product collection with large,
   visually striking images that emphasize the design and elegance of the latest
   models. The section draws attention to new arrivals and supports visual
   storytelling through high-quality photography;
+
 - **Sale** — highlights a special promotional product with an option to view
   more details and toggle description visibility;
+
 - **Footer** — additional navigation, contact details, social media links, and
-  legal information including copyright and policy links.
+  legal information including copyright and policy links;
+
 - **Buy Now** - a modal window with information about the product and a form for
   placing an order.
 
@@ -80,41 +101,41 @@ The site consists of the following main sections:
 
 ## Folder and File Structure
 
-- **.github/**: GitHub-specific configuration and workflows.
+- **.github/**: GitHub-specific configuration and workflows;
 
 - **assets/**: Folder stores images used in the README.md file to visually
-  document and represent the project.
+  document and represent the project;
 
 - **src/**: Folder contains the source code of the application, including all
   essential files such as HTML, CSS, JavaScript, and component logic used to
   build and structure the project:
 
-  - **css/**: CSS files for each section of the site.
+  - **css/**: CSS files for each section of the site;
 
-  - **fonts/**: Custom fonts used in the project.
+  - **fonts/**: Custom fonts used in the project;
 
-  - **img/**: Folder for images and icons used throughout the site.
+  - **img/**: Folder for images and icons used throughout the site;
 
-  - **js/**: Contains JavaScript files for functionality.
+  - **js/**: Contains JavaScript files for functionality;
 
-  - **partials/**: HTML partials for each section of the site.
+  - **partials/**: HTML partials for each section of the site;
 
-  - **public/**: Static assets for Vite (e.g., images, favicons, etc.).
+  - **public/**: Static assets for Vite (e.g., images, favicons, etc.);
 
-  - **index.html**: The main HTML file for the site.
+  - **index.html**: The main HTML file for the site;
 
   - **main.js**: This JavaScript entry file imports and initializes various
-    modules that handle the interactive functionality of the website.
+    modules that handle the interactive functionality of the website;
 
-- **.editorconfig**: Editor configuration file.
+- **.editorconfig**: Editor configuration file;
 
-- **.gitignore**: Specifies which files and directories to ignore in Git.
+- **.gitignore**: Specifies which files and directories to ignore in Git;
 
-- **.prettierrc.json**: Prettier configuration for code formatting.
+- **.prettierrc.json**: Prettier configuration for code formatting;
 
-- **package.json**: Contains metadata about the project and dependencies.
+- **package.json**: Contains metadata about the project and dependencies;
 
-- **README.md**: Project documentation and setup instructions.
+- **README.md**: Project documentation and setup instructions;
 
 - **vite.config.js**: Configuration file for Vite.
 
@@ -149,13 +170,13 @@ Google's PageSpeed Insights was used to analyze the performance of the
 TheWatchSpot website on both mobile and desktop devices. The results highlight
 strong performance across various categories, ensuring a smooth user experience.
 
-**Mobile Performance:**
+- **Mobile Performance:**
 
-![Mobile Page Performance](./assets/page-speed-mobile.jpg)
+  ![Mobile Page Performance](./assets/page-speed-mobile.jpg)
 
-**Desktop Performance:**
+- **Desktop Performance:**
 
-![Desktop Page Performance](./assets/page-speed-desktop.jpg)
+  ![Desktop Page Performance](./assets/page-speed-desktop.jpg)
 
 These results demonstrate that the website is optimized for both performance and
 user experience, ensuring fast loading times and high usability on all devices.
